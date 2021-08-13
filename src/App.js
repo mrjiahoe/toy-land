@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import GlobalStyle from "./globalStyles";
+import Hero from "./components/Hero";
+import Feature from "./components/Feature";
+import Footer from "./components/Footer";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Navbar from "./components/Navbar";
+import Sidebar from "./components/Sidebar";
+import Service from "./components/Service";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [isOpen, setIsOpen] = useState(false);
+
+	const toggle = () => {
+		setIsOpen(!isOpen);
+	};
+	return (
+		<Router>
+			<GlobalStyle />
+			<Navbar toggle={toggle} />
+			<Sidebar isOpen={isOpen} toggle={toggle} />
+			<Hero />
+			<About />
+			<Service />
+			<Feature />
+			<Contact />
+			<Footer />
+		</Router>
+	);
 }
 
 export default App;
