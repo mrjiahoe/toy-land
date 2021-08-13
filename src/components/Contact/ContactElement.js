@@ -10,6 +10,7 @@ export const ContactContainer = styled.div`
 `;
 
 export const ContactTitle = styled.h1`
+	font-size: clamp(3rem, 5vw, 5rem);
 	color: red;
 `;
 

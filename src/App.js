@@ -8,7 +8,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
-import Service from "./components/Service";
+import Why from "./components/Why";
 
 function App() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +23,7 @@ function App() {
 			<Sidebar isOpen={isOpen} toggle={toggle} />
 			<Hero />
 			<About />
-			<Service />
+			<Why />
 			<Feature />
 			<Contact />
 			<Footer />

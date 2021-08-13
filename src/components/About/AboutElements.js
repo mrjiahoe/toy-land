@@ -5,6 +5,8 @@ export const AboutContainer = styled.div`
 	text-decoration: none;
 	margin: 0;
 	height: 80vh;
+	display: flex;
+	overflow: hidden;
 `;
 
 export const AboutTitle = styled.h1`
