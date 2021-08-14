@@ -4,10 +4,11 @@ import whybg2 from "../../images/whybg2.jpg";
 
 export const WhyContainer = styled.div`
 	background: url(${whybg});
-	object-fit: cover;
+	/* object-fit: cover; */
 	min-height: 80vh;
-	background-size: 100%;
+	background-size: 150%;
 	background-position: right 0px bottom 5px;
+	background-repeat: no-repeat;
 
 	/* @media screen and (max-width: 770px) {
 		height: auto;
@@ -15,10 +16,9 @@ export const WhyContainer = styled.div`
 		background-position: left 30% bottom 0;
 		background-repeat: no-repeat;
 	} */
-	@media screen and (max-width: 770px) {
+	@media screen and (max-width: 1100px) {
 		background: url(${whybg2});
 		background-size: 150%;
-		background-repeat: no-repeat;
 	}
 `;
 
@@ -27,6 +27,11 @@ export const WhyTitle = styled.h1`
 	text-align: center;
 	padding-top: 40px;
 	padding-bottom: 40px;
+	color: white;
+
+	@media screen and (max-width: 1100px) {
+		color: black;
+	}
 `;
 
 export const WhyCardContainer = styled.div`
@@ -35,7 +40,7 @@ export const WhyCardContainer = styled.div`
 	justify-content: space-evenly;
 	padding-bottom: 50px;
 
-	@media screen and (max-width: 1024px) {
+	@media screen and (max-width: 1100px) {
 		grid-template-columns: repeat(1, 70vw);
 	}
 	@media screen and (max-width: 768px) {
@@ -57,7 +62,7 @@ export const WhyImage = styled.img`
 	align-self: center;
 	border-radius: 25px 25px 0 0;
 
-	@media screen and (max-width: 1024px) {
+	@media screen and (max-width: 1100px) {
 		width: 70vw;
 	}
 	@media screen and (max-width: 768px) {
