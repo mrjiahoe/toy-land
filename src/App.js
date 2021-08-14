@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { BrowserRouter as Router } from "react-router-dom";
 import GlobalStyle from "./globalStyles";
 import Hero from "./components/Hero";
-import Feature from "./components/Feature";
+// import Feature from "./components/Feature";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import Contact from "./components/Contact";
@@ -30,7 +30,7 @@ function App() {
 				<Hero />
 				<About />
 				<Why />
-				<Feature />
+				{/* <Feature /> */}
 				<Contact />
 				<Footer />
 			</down>

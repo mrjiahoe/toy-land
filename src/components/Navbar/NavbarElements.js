@@ -3,7 +3,7 @@ import { NavLink as Link } from "react-router-dom";
 import { FaRobot } from "react-icons/fa";
 
 export const Nav = styled.nav`
-	background: rgba(0, 0, 0, 0.1);
+	background: white;
 	height: 60px;
 	display: flex;
 	justify-content: space-between;

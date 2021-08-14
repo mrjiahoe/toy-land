@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const WhyContainer = styled.div`
 	box-shadow: 2px solid red;
+	background: #e82a2a;
 `;
 
 export const WhyTitle = styled.h1`

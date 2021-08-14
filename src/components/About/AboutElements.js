@@ -2,35 +2,58 @@ import styled from "styled-components";
 import images from "../../images/about.jpg";
 
 export const AboutContainer = styled.div`
+	display: inline-block;
 	text-decoration: none;
-	margin: 0;
-	height: 80vh;
-	/* display: flex; */
-	overflow: hidden;
-	background: green;
+	margin-right: 5rem;
+	background: url(${images});
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right;
+	width: 100vw;
+	height: auto;
+	min-height: 80vh;
+`;
+
+export const AboutInnerContainer = styled.div`
+	padding: 10px 10px;
+	height: 100%;
+	margin-top: 50px;
+	position: relative;
 `;
 
 export const AboutTitle = styled.h1`
-	text-align: center;
-	font-size: clamp(2.5rem, 10vw, 5rem);
-	margin-bottom: 1rem;
-	box-shadow: 3px 5px #e9ba23;
+	color: red;
+	text-align: left;
+	font-size: clamp(2rem, 3rem, 5rem);
+	text-decoration: underline;
+	margin: 1.5rem;
+	/* box-shadow: 3px 5px #e9ba23; */
 	letter-spacing: 3px;
 `;
 
 export const AboutLeft = styled.div`
 	width: 60%;
 	display: inline-block;
-	padding-left: 5rem;
+	padding-left: 10px;
+
+	@media screen and (max-width: 760px) {
+		width: 40%;
+	}
 `;
 
 export const AboutContent = styled.p`
-	font-size: clamp(1.5rem, 2vw, 2rem);
+	font-size: clamp(1.2rem, 2vw, 2rem);
 	margin-bottom: 2rem;
+	padding: 1rem;
+	border: 1px solid grey;
+	border-radius: 25px;
+
+	@media screen and (max-width: 760px) {
+	}
 `;
 
 export const AboutButton = styled.button`
-	font-size: 1.4rem;
+	font-size: clamp(1.2rem, 2vw, 2rem);
 	padding: 1rem 4rem;
 	border: none;
 	background: #e31837;
@@ -43,9 +66,4 @@ export const AboutButton = styled.button`
 		cursor: pointer;
 		color: #000;
 	}
-`;
-
-export const AboutImage = styled.img`
-	/* display: inline-block; */
-	background: url(${images});
 `;
