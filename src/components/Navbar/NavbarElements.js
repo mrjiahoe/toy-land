@@ -3,7 +3,7 @@ import { NavLink as Link } from "react-router-dom";
 import { FaRobot } from "react-icons/fa";
 
 export const Nav = styled.nav`
-	background: #fff;
+	background: rgba(0, 0, 0, 0.1);
 	height: 60px;
 	display: flex;
 	justify-content: space-between;
@@ -42,14 +42,18 @@ export const Logo = styled(Link)`
 	font-size: 1.8rem;
 	font-style: italic;
 	text-decoration: none;
-	text-align: center;
+	margin-left: 8vw;
 	width: 300px;
+
+	@media screen and (max-width: 888px) {
+		margin-left: 1vw;
+	}
 `;
 
 export const MenuBars = styled(FaRobot)`
 	display: none;
 
-	@media screen and (max-width: 760px) {
+	@media screen and (max-width: 888px) {
 		display: block;
 		font-size: 2rem;
 		transform: translate(10%, -10%);
@@ -60,8 +64,9 @@ export const NavMenu = styled.div`
 	display: flex;
 	align-items: center;
 	float: right;
+	font-size: 1.5rem;
 
-	@media screen and (max-width: 760px) {
+	@media screen and (max-width: 888px) {
 		display: none;
 	}
 `;
@@ -72,10 +77,16 @@ export const NavMenuLinks = styled(Link)`
 	color: red;
 	${NavLink};
 
-	&:hover {
-		color: black;
-		box-shadow: 0 2px black;
-		transition: box-shadow 0.3s ease-in-out;
+	&::after {
+		display: block;
+		content: "";
+		border-bottom: solid 3px black;
+		transform: scaleX(0);
+		transition: transform 250ms ease-in-out;
+	}
+
+	&:hover::after {
+		transform: scaleX(1);
 	}
 `;
 

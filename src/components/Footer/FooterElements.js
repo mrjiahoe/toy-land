@@ -71,7 +71,7 @@ export const SocialMediaWrap = styled.div`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 90%;
+	width: 100%;
 	max-width: 1000px;
 	margin: 20px auto 0 auto;
 
@@ -85,20 +85,21 @@ export const SocialLogo = styled(Link)`
 	justify-self: start;
 	cursor: pointer;
 	text-decoration: none;
-	font-size: 2rem;
+	font-style: italic;
+	font-size: 2.2rem;
 	display: flex;
 	align-items: center;
-	/* margin-bottom: 16px; */
 `;
 
 export const SocialIcon = styled.img`
-	margin-right: 10px;
-	max-height: 2rem;
+	max-height: 2.5rem;
 `;
 
 export const WebsiteRights = styled.small`
 	color: #fff;
-	margin-bottom: 16px;
+	font-size: 1rem;
+	margin-top: 16px;
+	vertical-align: bottom;
 `;
 
 export const SocialIcons = styled.div`

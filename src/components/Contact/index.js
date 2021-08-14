@@ -12,7 +12,7 @@ import {
 const Contact = () => {
 	return (
 		<ContactContainer>
-			<ContactTitle>Contact</ContactTitle>
+			<ContactTitle>Contact Us</ContactTitle>
 			<ContactForm>
 				<Name>Name :</Name>
 				<NameInput placeholder="Your Name"></NameInput>

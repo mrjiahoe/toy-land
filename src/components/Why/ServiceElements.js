@@ -1,13 +1,7 @@
 import styled from "styled-components";
 
 export const WhyContainer = styled.div`
-	background-color: grey;
-	height: 80vh;
 	box-shadow: 2px solid red;
-
-	@media screen and (max-width: 760px) {
-		height: 100vh;
-	}
 `;
 
 export const WhyTitle = styled.h1`
@@ -23,24 +17,33 @@ export const WhyCardContainer = styled.div`
 	justify-content: space-evenly;
 	padding-bottom: 50px;
 
-	@media screen and (max-width: 760px) {
+	@media screen and (max-width: 1024px) {
 		grid-template-columns: repeat(1, 80vw);
+	}
+	@media screen and (max-width: 768px) {
+		grid-template-columns: repeat(1, 70vw);
 	}
 `;
 
 export const WhyCard = styled.div`
 	display: grid;
-	border: 1px solid red;
+	background-color: grey;
+	border-radius: 25px;
+	margin-top: 25px;
 `;
 
 export const WhyImage = styled.img`
 	display: flex;
-	width: calc(30vw - 2px);
+	width: 30vw;
 	object-fit: cover;
 	align-self: center;
+	border-radius: 25px 25px 0 0;
 
-	@media screen and (max-width: 760px) {
-		width: calc(80vw - 2px);
+	@media screen and (max-width: 1024px) {
+		width: 80vw;
+	}
+	@media screen and (max-width: 768px) {
+		width: 70vw;
 	}
 `;
 

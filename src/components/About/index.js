@@ -27,7 +27,7 @@ const About = () => {
 				</AboutContent>
 				<AboutButton>Learn more about us</AboutButton>
 			</AboutLeft>
-			<AboutImage></AboutImage>
+			<AboutImage />
 		</AboutContainer>
 	);
 };

@@ -1,12 +1,13 @@
 import styled from "styled-components";
-import images from "../../images/logo.png";
+import images from "../../images/about.jpg";
 
 export const AboutContainer = styled.div`
 	text-decoration: none;
 	margin: 0;
 	height: 80vh;
-	display: flex;
+	/* display: flex; */
 	overflow: hidden;
+	background: green;
 `;
 
 export const AboutTitle = styled.h1`
@@ -44,12 +45,7 @@ export const AboutButton = styled.button`
 	}
 `;
 
-export const AboutImage = styled.div`
-	display: inline-block;
+export const AboutImage = styled.img`
+	/* display: inline-block; */
 	background: url(${images});
-	top: 50%;
-	left: 50%;
-	height: 300px;
-	min-width: 300px;
-	max-width: 100px;
 `;

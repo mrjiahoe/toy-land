@@ -2,25 +2,26 @@ import styled from "styled-components";
 
 export const ContactContainer = styled.div`
 	width: 80vw;
-	height: 80vh;
-	margin-top: 5vh;
-	margin-left: auto;
-	margin-right: auto;
+	height: auto;
+	margin: 5vh auto;
 	justify-content: center;
+	background-color: #202e52;
+	padding: 2rem;
+	border-radius: 20px;
 `;
 
 export const ContactTitle = styled.h1`
 	font-size: clamp(3rem, 5vw, 5rem);
-	color: red;
+	color: white;
+	text-align: center;
 `;
 
-export const ContactForm = styled.div`
-	margin: 0;
-`;
+export const ContactForm = styled.div``;
 
 export const Name = styled.h2`
 	font-size: 1.8rem;
-	color: black;
+	color: white;
+	margin: 0.8rem 0.5rem;
 `;
 
 export const NameInput = styled.input`
@@ -34,20 +35,19 @@ export const TextArea = styled.textarea`
 	height: 20vh;
 	font-size: 1.6rem;
 	padding: 5px 5px 0 10px;
-	color: red;
 `;
 
 export const SubmitBtn = styled.button`
-	/* align-items: center; */
+	margin-top: 1rem;
 	margin-left: auto;
 	margin-right: auto;
-	/* width: 40%; */
 	font-size: 1.4rem;
 	padding: 0.6rem 3rem;
 	border: none;
 	background: #ffc500;
 	color: #000;
 	transition: 0.2s ease-out;
+	border-radius: 20px;
 
 	&:hover {
 		color: #fff;
