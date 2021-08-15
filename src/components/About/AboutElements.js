@@ -86,9 +86,7 @@ export const AboutButton = styled.button`
 	}
 `;
 
-export const ImageContainer = styled.div`
-	display: block;
-`;
+export const ImageContainer = styled.div``;
 
 export const AboutImage1 = styled.img`
 	display: flex;
@@ -110,14 +108,16 @@ export const AboutImage2 = styled.img`
 	display: none;
 
 	@media screen and (max-width: 1100px) {
-		display: block;
+		display: flex;
 		position: relative;
 		width: auto;
-		height: 35vh;
-		margin: 25px auto 5vh auto;
+		height: 50vh;
+		padding: 5vh 0;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	@media screen and (max-width: 500px) {
-		height: 20vh;
+		height: 35vh;
 	}
 `;
