@@ -7,7 +7,7 @@ export const WhyContainer = styled.div`
 	/* object-fit: cover; */
 	min-height: 80vh;
 	background-size: 150%;
-	background-position: right 0px bottom 5px;
+	background-position: right 0px bottom 0px;
 	background-repeat: no-repeat;
 
 	/* @media screen and (max-width: 770px) {
@@ -18,7 +18,7 @@ export const WhyContainer = styled.div`
 	} */
 	@media screen and (max-width: 1100px) {
 		background: url(${whybg2});
-		background-size: 150%;
+		background-size: 200%;
 	}
 `;
 

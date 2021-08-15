@@ -17,7 +17,7 @@ const Service = () => {
 			<WhyCardContainer>
 				<WhyCard>
 					<WhyImage src={why1} alt="why" />
-					<WhyHeading>fast</WhyHeading>
+					<WhyHeading>Lorem ipsum</WhyHeading>
 					<WhyContent>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 					</WhyContent>
@@ -25,7 +25,7 @@ const Service = () => {
 
 				<WhyCard>
 					<WhyImage src={why1} alt="why" />
-					<WhyHeading>fast</WhyHeading>
+					<WhyHeading>Lorem ipsum</WhyHeading>
 					<WhyContent>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 					</WhyContent>
@@ -33,7 +33,7 @@ const Service = () => {
 
 				<WhyCard>
 					<WhyImage src={why1} alt="why" />
-					<WhyHeading>fast</WhyHeading>
+					<WhyHeading>Lorem ipsum</WhyHeading>
 					<WhyContent>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 					</WhyContent>
