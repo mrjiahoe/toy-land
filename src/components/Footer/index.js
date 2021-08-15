@@ -44,9 +44,9 @@ function Footer() {
 				<SocialMediaWrap>
 					<SocialLogo to="/">
 						<SocialIcon src={logo} alt="logo" />
-						Toys
+						Lorem
 					</SocialLogo>
-					<WebsiteRights>Toys © 2020</WebsiteRights>
+					<WebsiteRights>Lorem © 2020</WebsiteRights>
 					<SocialIcons>
 						<SocialIconLink href="/" target="_blank" aria-label="Facebook">
 							<FaFacebook />

@@ -22,7 +22,7 @@ const Navbar = ({ toggle }) => {
 		<Nav>
 			<Logo to="/home">
 				<NavImage src={logo} alt="logo" />
-				<NavTitle>Toys</NavTitle>
+				<NavTitle>Lorem</NavTitle>
 			</Logo>
 			<MenuBars onClick={toggle} />
 			<NavMenu>

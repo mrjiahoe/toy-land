@@ -12,8 +12,8 @@ const Hero = () => {
 		<HeroContainer>
 			<HeroContent>
 				<HeroItems>
-					<HeroH1>Largest Toy Collection</HeroH1>
-					<HeroP>in Brunei</HeroP>
+					<HeroH1>Lorem ipsum dolor</HeroH1>
+					<HeroP>Lorem ipsum</HeroP>
 					<HeroBtn>Learn More</HeroBtn>
 				</HeroItems>
 			</HeroContent>
