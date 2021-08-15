@@ -1,11 +1,27 @@
 import styled from "styled-components";
+import contact1 from "../../images/contact3.jpg";
+import contact2 from "../../images/contact2.jpg";
+
+export const ContactBg = styled.div`
+	display: flex;
+	/* height: 100vh; */
+	background: url(${contact1});
+	align-items: center;
+	background-size: cover;
+
+	@media screen and (max-width: 1100px) {
+		background: url(${contact2});
+		background-size: cover;
+	}
+`;
 
 export const ContactContainer = styled.div`
+	display: block;
 	width: 80vw;
 	height: auto;
-	margin: 5vh auto;
+	margin: 10vh auto;
 	justify-content: center;
-	background-color: #202e52;
+	background-color: rgba(0, 0, 0, 0.3);
 	padding: 2rem;
 	border-radius: 20px;
 `;
