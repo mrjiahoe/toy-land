@@ -4,7 +4,7 @@ import ImgBg from "../../images/bg.jpg";
 export const HeroContainer = styled.div`
 	background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
 		url(${ImgBg});
-	max-height: 100vh;
+	/* max-height: 100vh; */
 	width: auto;
 	background-position: center;
 	background-size: cover;
@@ -64,5 +64,9 @@ export const HeroBtn = styled.button`
 		transition: 0.2s ease-out;
 		cursor: pointer;
 		color: #000;
+	}
+
+	@media screen and (max-width: 500px) {
+		display: none;
 	}
 `;
