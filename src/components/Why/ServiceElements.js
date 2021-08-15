@@ -50,7 +50,7 @@ export const WhyCardContainer = styled.div`
 
 export const WhyCard = styled.div`
 	display: grid;
-	background-color: grey;
+	background-color: rgba(176, 176, 176, 0.8);
 	border-radius: 25px;
 	margin-top: 25px;
 `;
@@ -71,7 +71,7 @@ export const WhyImage = styled.img`
 `;
 
 export const WhyHeading = styled.h2`
-	padding-top: 5px;
+	padding-top: 25px;
 	text-align: center;
 	text-transform: capitalize;
 `;
