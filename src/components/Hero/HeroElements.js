@@ -4,7 +4,7 @@ import ImgBg from "../../images/bg.jpg";
 export const HeroContainer = styled.div`
 	background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
 		url(${ImgBg});
-	/* max-height: 100vh; */
+	max-height: 100vh;
 	width: auto;
 	background-position: center;
 	background-size: cover;
@@ -34,6 +34,7 @@ export const HeroItems = styled.div`
 
 	@media screen and (max-width: 650px) {
 		width: 100%;
+		max-height: 90vh;
 		justify-content: flex-end;
 		padding-bottom: 1rem;
 	}
