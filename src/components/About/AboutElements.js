@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const AboutContainer = styled.div`
 	text-decoration: none;
-	min-height: 80vh;
 	display: flex;
 	/* Gradients from https://uigradients.com/#Portrait */
 	background: #8e9eab; /* fallback for old browsers */
@@ -16,26 +15,23 @@ export const AboutContainer = styled.div`
 		#eef2f3,
 		#8e9eab
 	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	border: 1px solid blue;
-	@media screen and (max-width: 770px) {
+	/* border: 1px solid blue; */
+	@media screen and (max-width: 1100px) {
 		display: block;
 	}
 `;
 
 export const AboutInnerContainer = styled.div`
-	/* padding: 10px 10px; */
 	height: 100%;
-	margin-top: 50px;
+	padding-top: 50px;
 	position: relative;
-	/* width: 60vw; */
-	border: 1px solid yellow;
+	/* border: 1px solid yellow; */
 `;
 
 export const AboutTitle = styled.h1`
 	color: red;
 	text-align: left;
 	font-size: clamp(1.8rem, 3rem, 5rem);
-	/* text-decoration: underline; */
 	margin: 1.5rem;
 	box-shadow: 0px 5px red;
 	width: 45%;
@@ -46,11 +42,10 @@ export const AboutTitle = styled.h1`
 `;
 
 export const AboutLeft = styled.div`
-	/* width: 60vw; */
-	/* display: inline-block; */
-	border: 1px solid green;
+	/* border: 1px solid green; */
 
-	@media screen and (max-width: 760px) {
+	@media screen and (max-width: 1100px) {
+		display: block;
 		width: 100%;
 	}
 `;
@@ -59,9 +54,7 @@ export const AboutContent = styled.p`
 	font-size: clamp(1.2rem, 2vw, 2rem);
 	width: 60vw;
 	margin: 0 1rem 1.2rem 1rem;
-	/* margin-bottom: 1.2rem; */
-	/* padding: 1rem; */
-	border: 1px solid grey;
+	/* border: 1px solid grey; */
 	border-radius: 25px;
 
 	@media screen and (max-width: 1100px) {
@@ -98,14 +91,15 @@ export const ImageContainer = styled.div`
 `;
 
 export const AboutImage1 = styled.img`
-	display: inline-block;
+	display: flex;
 	text-align: right;
 	margin: 2rem;
-	/* border-radius: 25px 25px 0 25px; */
-	/* border: 0.5px solid black; */
-	float: right;
-	height: 60vh;
+	width: 90%;
+	max-height: 60vh;
 	object-fit: cover;
+
+	position: relative;
+	align-self: flex-end;
 
 	@media screen and (max-width: 1100px) {
 		display: none;
@@ -120,10 +114,7 @@ export const AboutImage2 = styled.img`
 		position: relative;
 		width: auto;
 		height: 35vh;
-		margin-top: 25px;
-		margin-left: auto;
-		margin-right: auto;
-		/* border-radius: 10px; */
+		margin: 25px auto 5vh auto;
 	}
 
 	@media screen and (max-width: 500px) {

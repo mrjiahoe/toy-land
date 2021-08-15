@@ -27,12 +27,12 @@ const About = () => {
 						Curabitur ut quam eros. <br />
 					</AboutContent>
 					<AboutButton>Learn more about us</AboutButton>
-					<ImageContainer>
-						<AboutImage1 src={image1} alt="images" />
-						<AboutImage2 src={image2} alt="images" />
-					</ImageContainer>
 				</AboutLeft>
 			</AboutInnerContainer>
+			<ImageContainer>
+				<AboutImage1 src={image1} alt="images" />
+				<AboutImage2 src={image2} alt="images" />
+			</ImageContainer>
 		</AboutContainer>
 	);
 };
