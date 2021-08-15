@@ -6,7 +6,12 @@ import {
 	AboutContent,
 	AboutButton,
 	AboutLeft,
+	AboutImage1,
+	AboutImage2,
+	ImageContainer,
 } from "./AboutElements";
+import image1 from "../../images/about1.jpg";
+import image2 from "../../images/about2.jpg";
 
 const About = () => {
 	return (
@@ -22,6 +27,10 @@ const About = () => {
 						Curabitur ut quam eros. <br />
 					</AboutContent>
 					<AboutButton>Learn more about us</AboutButton>
+					<ImageContainer>
+						<AboutImage1 src={image1} alt="images" />
+						<AboutImage2 src={image2} alt="images" />
+					</ImageContainer>
 				</AboutLeft>
 			</AboutInnerContainer>
 		</AboutContainer>
